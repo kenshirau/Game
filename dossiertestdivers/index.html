@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <title>page test</title>
+    <link type="text/css" rel="stylesheetS"  href="index.css">
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .main {
+            width: 100%;
+            margin: 0;
+        }
+        .flex {
+            display: flex;
+            border: 1px red solid;
+            width: 100%;
+            margin: 50px 0;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .blockImages {
+            width: 100%;
+            border: 1px black solid;
+            padding: 5px;
+            margin: 5px;
+        }
+        .un {
+            background-color: mintcream;
+            height: 50px;
+            order: 1;
+        }
+        .deux {
+            background-color: green;
+            height: 50px;
+            order: 2;
+        }
+        .trois{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: red;
+            height: 100px;
+            order: 3;
+            width: 49%;
+        }
+        .quatre{
+            background-color: blue;
+            flex-direction: column;
+            order: 3;
+            width: 44%;
+        }
+        .cinq{
+            background-color: aquamarine;
+            order: 4;
+
+        }
+        .six{
+            background-color: bisque;
+            height: 50px;
+            order: 5;
+        }
+
+        @media (max-width:767px) {
+            .trois {
+                width: 100%;
+            }
+            .quatre{
+                background-color: blue;
+                flex-direction: column;
+                order: 6;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="flex">
+            <div class="blockImages un">
+                ma div flex 1
+            </div>
+            <div class="blockImages deux">
+                ma div flex 2
+            </div>
+            <div class="blockImages trois">
+                ma div flex 3
+            </div>
+            <div class="blockImages quatre">
+                <div class="blockImages cinq">
+                    ma div flex 4
+                </div>
+                <div class="blockImages cinq">
+                    ma div flex 4
+                </div>
+            </div>
+            <div class="blockImages six">
+                ma div flex 5
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
